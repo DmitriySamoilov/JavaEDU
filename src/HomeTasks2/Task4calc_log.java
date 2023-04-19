@@ -54,10 +54,12 @@ public class Task4calc_log {
     }
     public static void func_add_log(String record) throws IOException {
         Logger logger = Logger.getLogger(Task4calc_log.class.getName());
-        FileHandler fh = new FileHandler("logTask4calc.txt");
+        FileHandler fh = new FileHandler("logTask4calc.txt",true);
         logger.addHandler(fh);
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
         logger.log(Level.INFO,record);
+        logger.setUseParentHandlers(false);
+        fh.close();
     }
 }
