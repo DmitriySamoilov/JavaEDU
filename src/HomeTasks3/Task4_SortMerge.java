@@ -3,7 +3,7 @@ package HomeTasks3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task4sortMerge {
+public class Task4_SortMerge {
     public static void main(String[] args) {
         List<Integer> nums = new ArrayList<>(Task1.createListRandomInt(20, 0, 30));
         System.out.println(nums);
