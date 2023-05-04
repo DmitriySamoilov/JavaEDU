@@ -82,7 +82,5 @@ public class Main {
         System.out.println(treeMap);
     }
 
-    public static void HomeTask3(){//HeapSort
 
-    }
 }
