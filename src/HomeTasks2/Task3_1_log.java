@@ -23,7 +23,7 @@ public class Task3_1_log {
         }
         catch(Exception ex){
             Logger logger = Logger.getLogger(Task3_1_log.class.getName());
-            FileHandler fh = new FileHandler("logTask3_1.txt");
+            FileHandler fh = new FileHandler("logTask3_1.txt",true);
             logger.addHandler(fh);
             SimpleFormatter sFormat = new SimpleFormatter();
             fh.setFormatter(sFormat);

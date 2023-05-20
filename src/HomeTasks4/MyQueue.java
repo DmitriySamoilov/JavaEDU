@@ -17,6 +17,7 @@ public class MyQueue {
         }
         arr[size++] = num;
     }
+
     int dequeue(){//- возвращает первый элемент из очереди и удаляет его
       int num = arr[0];
         Integer[] arr2 = new Integer[arr.length];
@@ -25,9 +26,11 @@ public class MyQueue {
         size--;
         return num;
     }
+
     int first() {//- возвращает первый элемент из очереди, не удаляя.
     return arr[0];
     }
+
     void print(){// -печатает всю queue
         StringBuilder sB = new StringBuilder();
         sB.append("[");

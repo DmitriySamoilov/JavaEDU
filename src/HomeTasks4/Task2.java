@@ -8,7 +8,7 @@ dequeue() - возвращает первый элемент из очереди
 first() - возвращает первый элемент из очереди, не удаляя.*/
 public class Task2 {
     public static void main(String[] args) {
-        LinkedList<Integer> lst = Task1.creatList(10,0,10);
+        LinkedList<Integer> lst = Task1.createList(10,0,10);
         System.out.println(lst);
         enqueue(lst,99);
         System.out.println(lst);
