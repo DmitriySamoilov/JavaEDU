@@ -23,10 +23,10 @@ public class Cat {
         return satiety;
     }
 
-    public void eat(Plate plate) {
-        if (plate.getFood() >= this.appetite) {
+    public void eat(FoodKeeper foodKeeper) {
+        if (foodKeeper.getFood() >= this.appetite) {
             this.satiety = true;
-            plate.setFood(plate.getFood() - this.appetite);
+            foodKeeper.setFood(foodKeeper.getFood() - this.appetite);
         }
     }
 }

@@ -1,6 +1,6 @@
 package OOP_sem2;
 
-public class Plate {
+public class Plate implements FoodKeeper{
     private int food;
 
     public Plate(int food) {
