@@ -24,7 +24,7 @@ public class Cat {
     }
 
     public void eat(FoodKeeper foodKeeper) {
-        if (foodKeeper.getFood() >= this.appetite) {
+        if (foodKeeper.getFood() >= this.appetite && !this.satiety) {
             this.satiety = true;
             foodKeeper.setFood(foodKeeper.getFood() - this.appetite);
         }
