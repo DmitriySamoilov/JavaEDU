@@ -4,11 +4,7 @@ public class Plate implements FoodKeeper{
     private int food;
 
     public Plate(int food) {
-        if (food > 0) {
-            this.food = food;
-        } else {
-            this.food = 0;
-        }
+        setFood(food);
     }
 
     public int getFood() {
