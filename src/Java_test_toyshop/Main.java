@@ -11,7 +11,7 @@ public class Main {
             shop.addToy(toy_factory());
         }
 
-        for (int i = 0; i < 20; i++) {//10 toys отправили в prize_fund
+        for (int i = 0; i < 20; i++) {//20 toys отправили в prize_fund
             shop.getToyToPrizeFund();
         }
 
@@ -23,7 +23,7 @@ public class Main {
     public static Toy toy_factory() {
         Random rnd = new Random();
         String[] toy_names = {"Мишка","Зайка", "Жирафа", "Слон", "Дельфин", "Кит", "Морж", "Колобок"};
-        String[] toy_additional_names = {"Меховой", "Белый", "Горбатый", "Голубой", "Гризли", "Африканский","Амазонский", "Антарктический"};
+        String[] toy_additional_names = {"Меховой", "Белый", "Горбатый", "Голубой", "Гризли", "Африканский","Амазонский", "Антарктический","Ушастый"};
         String[] toy_sizes = {"Giant","Big", "Medium", "Small", "Tiny"};
         String toy_name = toy_additional_names[rnd.nextInt(0, toy_additional_names.length)] + " "
                 + toy_names[rnd.nextInt(0, toy_names.length)] + " "
