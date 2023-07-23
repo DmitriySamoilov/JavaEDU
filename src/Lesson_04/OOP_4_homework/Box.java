@@ -1,6 +1,9 @@
 package Lesson_04.OOP_4_homework;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Objects;
 
 
 public class Box<T extends Fruit> implements Comparable<Box<T>> {
@@ -12,6 +15,16 @@ public class Box<T extends Fruit> implements Comparable<Box<T>> {
         this.fruits = new ArrayList<>();
         this.idBox = ++count;
     }
+    public Box(Collection<T> fruits) {
+        this.fruits = new ArrayList<>(fruits);
+        this.idBox = ++count;
+    }
+
+    public Box(T... fruits) {
+        this.fruits = new ArrayList<>(Arrays.asList(fruits));
+        this.idBox = ++count;
+    }
+
 
     public int getIdBox() {
         return idBox;
@@ -44,7 +57,7 @@ public class Box<T extends Fruit> implements Comparable<Box<T>> {
      * @param o
      * @return
      */
-    public boolean compare(Box o) {//
+    public boolean compare(Box<?> o) {//
         return compareTo(o) == 0;
     }
 
@@ -60,5 +73,12 @@ public class Box<T extends Fruit> implements Comparable<Box<T>> {
         return isEmpty() ? String.format("FruitBox#%d: empty", this.idBox) :
                 String.format("FruitBox#%d: %s %d fruits; weight %.2f kg", this.idBox, this.fruits.get(0).toString(),
                         this.fruits.size(), this.getWeight());
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Box<?> box = (Box<?>) o;
+        return Objects.equals(getWeight(), box.getWeight());
     }
 }

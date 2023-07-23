@@ -22,7 +22,11 @@ public class Notebook {
     private String os;
     private String cpu_model;
     private String serial_number;
-
+/**
+ * Constructor
+ * @param brand Производитель
+ * @param notebook_model Модель
+ */
     Notebook(String brand, String notebook_model, Integer ram_capacity, Integer hdd_capacity, String os,
              String cpu_model, String serial_number) {
         this.brand = brand.toUpperCase();
@@ -98,8 +102,8 @@ public class Notebook {
 
     @Override
     public int hashCode() {
-        return brand.hashCode() + notebook_model.hashCode() * 3 + ram_capacity * 7
-                + hdd_capacity * 11 + os.hashCode() * 13 + cpu_model.hashCode() * 17 + serial_number.hashCode() * 19;
+        return brand.hashCode() + notebook_model.hashCode() * 3 + ram_capacity * 5
+                + hdd_capacity * 7 + os.hashCode() * 11 + cpu_model.hashCode() * 13 + serial_number.hashCode() * 17;
     }
 
     @Override
