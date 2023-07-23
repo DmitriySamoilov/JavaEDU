@@ -1,0 +1,122 @@
+[
+	{
+		"toy_id":"23",
+		"name":"Антарктический Морж Medium",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"38",
+		"name":"Амазонский Кит Small",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"17",
+		"name":"Амазонский Колобок Medium",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"83",
+		"name":"Гризли Слон Medium",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"52",
+		"name":"Антарктический Жирафа Big",
+		"volume":1,
+		"frequency":1
+	},
+	{
+		"toy_id":"92",
+		"name":"Амазонский Зайка Medium",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"15",
+		"name":"Амазонский Слон Tiny",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"75",
+		"name":"Белый Жирафа Tiny",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"49",
+		"name":"Гризли Дельфин Big",
+		"volume":1,
+		"frequency":1
+	},
+	{
+		"toy_id":"45",
+		"name":"Меховой Жирафа Small",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"33",
+		"name":"Антарктический Слон Medium",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"13",
+		"name":"Африканский Колобок Tiny",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"95",
+		"name":"Голубой Зайка Medium",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"8",
+		"name":"Меховой Морж Tiny",
+		"volume":1,
+		"frequency":1
+	},
+	{
+		"toy_id":"66",
+		"name":"Амазонский Колобок Giant",
+		"volume":1,
+		"frequency":2
+	},
+	{
+		"toy_id":"78",
+		"name":"Амазонский Кит Small",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"99",
+		"name":"Антарктический Дельфин Tiny",
+		"volume":1,
+		"frequency":2
+	},
+	{
+		"toy_id":"10",
+		"name":"Белый Морж Big",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"32",
+		"name":"Антарктический Дельфин Tiny",
+		"volume":1,
+		"frequency":3
+	},
+	{
+		"toy_id":"59",
+		"name":"Африканский Слон Tiny",
+		"volume":1,
+		"frequency":3
+	}
+]
