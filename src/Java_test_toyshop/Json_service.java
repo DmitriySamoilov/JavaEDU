@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface Json_service {
     static void saveJson(List<Toy> toys) {
-        String fileName = "C:/Users/DDDok/Java EDU Projects/JavaEDUproject/src/Java_test_toyshop/Toys.json";
+        String fileName = "Toys.json";
         String fileBody = castToyToJson(toys);
 
         try (FileWriter writer = new FileWriter(fileName, false)) {
